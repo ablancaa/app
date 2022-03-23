@@ -4,9 +4,10 @@
         <h1 v-else>{{ count }}</h1>
         <span v-if="!esPar" class="esMultiplo">Es múltiplo de 3</span> 
         <br/><br/>
-          <button class="btn" @click="increaseCount()">click me!</button>
+          <button v-bind:class="[primary ? primaryClass :'', btnNormal]" @click="increaseCount()">click me!</button>
           <h3>Alberto Blanca Alcaide</h3>
     </div>
+    <br/>
 </template>
 
 <script>    
@@ -18,7 +19,10 @@
         props: {},
         data(){
             return{
+                primaryClass: 'btn--primary',
+                btnNormal: 'btn',
                 esPar: true,
+                primary: false,
                 count: 6,
                 size: 1,
                 values: [
@@ -27,14 +31,17 @@
                 ],
             };
         }, methods: {
-            increaseCount: function () {
+            increaseCount () {
+                
                 this.count=this.count+this.size;
                 if((this.count % 3) == 0){
-                    this.count+1;
+                    //this.count+1;
                     this.esPar = false;
+                    this.primary = true;
                     console.log(this.count+" Es múltiplo de 3")
                 } else {
                     this.esPar= true;
+                    this.primary = false;
                     console.log(this.count+" NO es múltiplo de 3")
                 }
             },
@@ -46,4 +53,13 @@
 .esMultiplo {
     size: 10px;
 }
+
+.btn {
+    background-color: aquamarine;
+}
+
+.btn--primary{
+    background-color: rgb(255, 81, 0);
+}
+
 </style>
