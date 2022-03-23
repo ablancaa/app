@@ -4,7 +4,7 @@
         <h1 v-else>{{count}}</h1>
         <br/><br/>
           <button class="btn" @click="increaseCount(size)">click me!</button>
-          <h3>Alberto Blanca Alcaide</h3>
+          <h3>Alberto Blanca Alcaidev</h3>
     </div>
 </template>
 
