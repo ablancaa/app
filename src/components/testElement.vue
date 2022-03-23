@@ -55,11 +55,15 @@
 }
 
 .btn {
-    background-color: aquamarine;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    border: 5px solid red;
+    border-radius: 25px;
 }
 
 .btn--primary{
-    background-color: rgb(255, 81, 0);
+    border: 5px solid rgb(2, 58, 7);
+    background-color: rgb(127, 243, 152);
 }
-
 </style>
