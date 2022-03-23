@@ -1,9 +1,10 @@
 <template>
     <div>
         <h1 v-if="esPar">I am odd</h1>
-        <h1 v-else>{{count}}</h1>
+        <h1 v-else>{{ count }}</h1>
+        <span v-if="!esPar" class="peq">Es múltiplo de 3</span> 
         <br/><br/>
-          <button class="btn" @click="increaseCount(size)">click me!</button>
+          <button class="btn" @click="increaseCount()">click me!</button>
           <h3>Alberto Blanca Alcaide</h3>
     </div>
 </template>
@@ -41,6 +42,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+.peq {
+    size: 9px;
+}
 </style>
