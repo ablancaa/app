@@ -2,7 +2,7 @@
     <div>
         <h1 v-if="esPar">I am odd</h1>
         <h1 v-else>{{ count }}</h1>
-        <span v-if="!esPar" class="peq">Es múltiplo de 3</span> 
+        <span v-if="!esPar" class="esMultiplo">Es múltiplo de 3</span> 
         <br/><br/>
           <button class="btn" @click="increaseCount()">click me!</button>
           <h3>Alberto Blanca Alcaide</h3>
@@ -43,7 +43,7 @@
 </script>
 
 <style scoped>
-.peq {
-    size: 9px;
+.esMultiplo {
+    size: 10px;
 }
 </style>
