@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/FotoPerfil.jpg" height="150">
-   <testElement :size="count" />
+   <testElement size=25/>
      </div>
 </template>
 
@@ -14,7 +14,11 @@ export default {
   components: {
     testElement,
   }, 
-  data(){}
+  data(){
+    return{
+      size: '',
+    }
+  }
 }
 </script>
 
