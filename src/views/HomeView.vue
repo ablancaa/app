@@ -1,15 +1,11 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/FotoPerfil.jpg" height="150">
-   <testElement :size="count" />
+   <testElement :size=25 />
      </div>
      <div>
       <a @click="url">Click here!</a>
    </div>
-   <p>
-     {{name()}}
-   </p>
-   <p>{{lastName()}}</p>
 
 
 </template>
@@ -25,25 +21,8 @@ export default {
   }, 
   data(){
     return{
-      name: "John",
-      lastName: "Doe",
-      url:"https://www.uoc.edu",
+      size: 25,
     }
-  },
-  computed:{
-    fullName(){
-		return this.name +' '+ this.lastName;
-  },
-  watch: {
-  name(name) {
-    this.name = name;
-  },
-  lastName(lastName) {
-    this.lastName = lastName;
-  }
-}
-
-
   }
 }
 </script>

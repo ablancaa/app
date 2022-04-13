@@ -6,6 +6,19 @@
 
   <router-view/>
 </template>
+<script>
+
+export default {
+  name: 'app',
+  components: {
+  },
+  data(){
+    return{
+      size: 18,
+    }
+  }
+}
+</script>
 
 <style>
 #app {
