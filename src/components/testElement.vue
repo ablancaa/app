@@ -4,7 +4,7 @@
         <h1 v-else>{{ count }}</h1>
         <span v-if="!esPar" class="esMultiplo">Es múltiplo de 3</span> 
         <br/><br/>
-          <button class="btn" v-bind:class="[primary ? primaryClass :'', btnNormal]" @click="increaseCount()">click me!</button>
+          <button class="btn" :class="[primary ? primaryClass :'', btnNormal]" @click="increaseCount()">click me!</button>
           <h3>Alberto Blanca Alcaide</h3>
     </div>
     <br/>
