@@ -2,7 +2,6 @@
     <div>
 <h1>Prueba</h1>
        <div>
-         
            <input type="text" v-model="name"/>
            <input type="text" v-model="lastName"/>
       

@@ -4,7 +4,7 @@
    <testElement :size=25 />
      </div>
      <div>
-      <a @click="url">Click here!</a>
+      <a v-bind:href="url" target="_blank">Click here!</a>
    </div>
 
 
@@ -22,6 +22,7 @@ export default {
   data(){
     return{
       size: 25,
+      url:"https://www.uoc.edu" 
     }
   }
 }

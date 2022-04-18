@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> | 
     <router-link to="Prueba">Prueba</router-link>
   </nav>
-
+   
   <router-view/>
 </template>
 <script>
@@ -14,7 +14,7 @@ export default {
   },
   data(){
     return{
-      size: 18,
+      url:"https://www.uoc.edu"
     }
   }
 }
